@@ -1,6 +1,13 @@
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# hodots. Remagine Edition
+This is the front end interface with React.js for [hodots.](https://hodots.com/) with updated user interface from the default interface.<br />
+If you are a member of this organization, you can view the Modern (default interface) version of hodots. at [leafstudiosDot/hodotsnet](https://github.com/leafstudiosDot/hodotsnet).
+<br />
+<br />
+Some updates changes for hodots. front end interface web was managed and developed by leafstudiosDot.
+
+# React.js Instruction
 
 ## Available Scripts
 
