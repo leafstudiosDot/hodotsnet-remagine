@@ -1,6 +1,7 @@
 {
   "name": "hodotsnet-remagine",
-  "version": "0.1.0",
+  "description": "hodots. Web Remagine Edition",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -9,7 +10,12 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "axios": "^0.21.1",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-helmet": "^6.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
