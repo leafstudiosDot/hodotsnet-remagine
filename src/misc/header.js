@@ -10,7 +10,7 @@ class Header extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{zIndex: 500}}>
 
             </div>
         )
