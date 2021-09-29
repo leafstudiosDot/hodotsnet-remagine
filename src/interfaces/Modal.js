@@ -27,8 +27,8 @@ class Prompt extends Component {
                     <div id="Modal-Description">{this.props.desc}</div>
 
                     <div id="Modal-ButtonContainer">
-                        <div id="Modal-ButtonAccept" onClick={() => this.props.accept()}>{this.props.acceptText}</div>
                         <div id="Modal-ButtonReject" onClick={() => this.props.reject()}>{this.props.rejectText}</div>
+                        <div id="Modal-ButtonAccept" onClick={() => this.props.accept()}>{this.props.acceptText}</div>
                     </div>
                 </div>
                 <div className="Modal-BG" />
