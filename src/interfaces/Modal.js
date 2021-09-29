@@ -11,6 +11,7 @@ import './Modal.css';
  * @param {string} acceptText - Accept Button Text.
  * @param {callback} reject - Reject Button Callback.
  * @param {string} rejectText - Reject Button Text.
+ * @param {callback} onDisappear - Call Function on Disappear.
  * @param {number} height - Prompt Height.
  */
 class Prompt extends Component {
@@ -25,6 +26,9 @@ class Prompt extends Component {
         var scope = this;
         document.getElementById("Modal-Container").addEventListener("animationend", function() {
             scope.setState({started: scope.state.started + 1})
+            if (scope.state.started === 2) {
+                scope.props.onDisappear();
+            }
             if (scope.state.started === 3) {
                 scope.setState({started: 1})
             }

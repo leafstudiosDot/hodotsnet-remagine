@@ -1,4 +1,4 @@
-import { useState, Component } from 'react';
+import { Component } from 'react';
 import './App.css';
 import Header from './misc/header';
 import { Prompt } from './interfaces/Modal';
@@ -16,6 +16,7 @@ class Home extends Component {
     super(props);
     this.state = {
       enabled: true,
+      showPrompt: true,
     }
   }
 
@@ -23,6 +24,16 @@ class Home extends Component {
     return (
       <div>
         <Header />
+        {this.state.showPrompt ? (
+          <Prompt
+          title={`Are you sure?`}
+          desc={`This will lose all of your data`}
+          acceptText={`Yes`}
+          rejectText={`No`}
+          reject={() => this.setState({enabled: false})}
+          enabled={this.state.enabled}
+          onDisappear={() => this.setState({showPrompt: false})} />
+        ) : (null)}
         
       </div>
     )
