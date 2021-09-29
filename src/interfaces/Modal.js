@@ -10,6 +10,7 @@ import './Modal.css';
  * @param {string} acceptText - Accept Button Text.
  * @param {callback} reject - Reject Button Callback.
  * @param {string} rejectText - Reject Button Text.
+ * @param {number} height - Prompt Height.
  */
 class Prompt extends Component {
     constructor(props) {
@@ -22,7 +23,10 @@ class Prompt extends Component {
     render() {
         return (
             <span style={{zIndex: 100}}>
-                <div className="Modal-Prompt">
+                <div className="Modal-Prompt"
+                style={{
+                    height: this.props.height + 'px'
+                }}>
                     <div id="Modal-Title">{this.props.title}</div>
                     <div id="Modal-Description">{this.props.desc}</div>
 

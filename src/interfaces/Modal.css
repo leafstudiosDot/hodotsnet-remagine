@@ -1,5 +1,40 @@
 .Modal-Prompt {
+    z-index: 101;
+    width: 60%;
+    height: 20%;
+    position: fixed;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
+#Modal-Title {
+    font-size: 20px;
+}
+
+#Modal-Description {
+    text-align: center;
+    height: 80px;
+    overflow-y: overlay;
+    word-break: break-all;
+}
+
+#Modal-ButtonContainer {
+    display: inline-flex;
+    right: 20px;
+    position: absolute;
+    bottom: 10px;
+}
+
+#Modal-ButtonReject {
+    padding: 5px;
+}
+
+#Modal-ButtonAccept {
+    padding: 5px;
 }
 
 .Modal-BG {
