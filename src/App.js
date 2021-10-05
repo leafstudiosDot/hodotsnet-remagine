@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import './App.css';
-import Header from './misc/header';
+import Header from './misc/header/header';
 import { Prompt } from './interfaces/Modal';
 
 function App() {
