@@ -27,8 +27,8 @@ function Prompt(props) {
                 <div id="Modal-Description">{props.desc}</div>
 
                 <div id="Modal-ButtonContainer">
-                    <div id="Modal-ButtonReject" onClick={() => props.reject()}>{props.rejectText}</div>
-                    <div id="Modal-ButtonAccept" onClick={() => props.accept()}>{props.acceptText}</div>
+                    {props.rejectText === "" || props.rejectText === null ? (null) : (<div id="Modal-ButtonReject" onClick={() => props.reject()}>{props.rejectText}</div>)}
+                    {props.acceptText === "" || props.acceptText === null ? (null) : (<div id="Modal-ButtonAccept" onClick={() => props.accept()}>{props.acceptText}</div>)}
                 </div>
             </div>
             <div className="Modal-BG" />
