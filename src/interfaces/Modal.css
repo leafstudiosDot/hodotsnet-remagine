@@ -23,7 +23,7 @@
     text-align: center;
     height: 80px;
     overflow-y: overlay;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 #Modal-ButtonContainer {
@@ -56,4 +56,18 @@
     animation-timing-function: cubic-bezier(0, 0.57, 0.57, 0.98);
     animation-name: ShowInBG;
     animation-duration: 0.3s;
+}
+
+@media screen and (max-width: 660px) {
+    .Modal-Prompt {
+        width: 95%;
+        height: 92%;
+    }
+
+    #Modal-ButtonAccept {
+        margin-left: 5px;
+    }
+    #Modal-ButtonContainer {
+        right: 5px;
+    }
 }
