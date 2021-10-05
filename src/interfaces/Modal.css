@@ -36,11 +36,16 @@
 #Modal-ButtonReject {
     padding: 5px;
     cursor: pointer;
+    background-color: #e25151;
+    border-radius: 10px;
 }
 
 #Modal-ButtonAccept {
     padding: 5px;
     cursor: pointer;
+    background-color: #63ff46;
+    border-radius: 10px;
+    margin-left: 20px;
 }
 
 .Modal-BG {
