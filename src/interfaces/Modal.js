@@ -1,4 +1,3 @@
-import { Component } from "react";
 import './Modal.css';
 
 /**
@@ -14,43 +13,27 @@ import './Modal.css';
  * @param {number} height - Prompt Height.
  */
 
-class Prompt extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        }
-    }
-
-    componentDidMount() {
-        
-    }
-
-    commponentDidUnmount() {
-
-    }
-
-    render() {
-        return (
-            <span style={{
-                zIndex: 100,
-                display: this.props.enabled ? ('block') : ('none')
-                }}>
-                <div id="Modal-Container" className="Modal-Prompt"
+function Prompt(props) {
+    return (
+        <span style={{
+            zIndex: 100,
+            display: props.enabled ? ('block') : ('none')
+        }}>
+            <div id="Modal-Container" className="Modal-Prompt"
                 style={{
-                    height: this.props.height + 'px'
+                    height: props.height + 'px'
                 }}>
-                    <div id="Modal-Title">{this.props.title}</div>
-                    <div id="Modal-Description">{this.props.desc}</div>
+                <div id="Modal-Title">{props.title}</div>
+                <div id="Modal-Description">{props.desc}</div>
 
-                    <div id="Modal-ButtonContainer">
-                        <div id="Modal-ButtonReject" onClick={() => this.props.reject()}>{this.props.rejectText}</div>
-                        <div id="Modal-ButtonAccept" onClick={() => this.props.accept()}>{this.props.acceptText}</div>
-                    </div>
+                <div id="Modal-ButtonContainer">
+                    <div id="Modal-ButtonReject" onClick={() => props.reject()}>{props.rejectText}</div>
+                    <div id="Modal-ButtonAccept" onClick={() => props.accept()}>{props.acceptText}</div>
                 </div>
-                <div className="Modal-BG" />
-            </span>
-        )
-    }
+            </div>
+            <div className="Modal-BG" />
+        </span>
+    )
 }
 
 export { Prompt }
