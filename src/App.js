@@ -24,17 +24,13 @@ class Home extends Component {
     return (
       <div>
         <Header />
-        {this.state.showPrompt ? (
           <Prompt
           title={`Are you sure?`}
           desc={`This will lose all of your data`}
           acceptText={`Yes`}
           rejectText={`No`}
           reject={() => this.setState({enabled: false})}
-          enabled={this.state.enabled}
-          onDisappear={() => this.setState({showPrompt: false})} />
-        ) : (null)}
-        
+          enabled={this.state.enabled} />
       </div>
     )
   }
