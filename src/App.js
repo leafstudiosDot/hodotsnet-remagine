@@ -25,10 +25,10 @@ class Home extends Component {
       <div>
         <Header />
           <Prompt
-          title={`Are you sure?`}
-          desc={`This will lose all of your data`}
-          acceptText={`Yes`}
-          rejectText={`No`}
+          title={`Meet hodots. Remagine`}
+          desc={`hodots. Remagine is a second level interface for hodots.`}
+          acceptText={`Explore Remagine`}
+          rejectText={`Take me back to the Classic`}
           reject={() => this.setState({enabled: false})}
           enabled={this.state.enabled} />
       </div>
