@@ -26,7 +26,7 @@ class Home extends Component {
         <Header />
           <Prompt
           title={`Meet hodots. Remagine`}
-          desc={`hodots. Remagine is a second level interface for hodots.`}
+          desc={`A second level interface for hodots., You can come back here anytime.`}
           acceptText={`Explore Remagine`}
           rejectText={`Take me back to the Classic`}
           reject={() => this.setState({enabled: false})}
