@@ -31,7 +31,8 @@ class Home extends Component {
           desc={`A second level interface for hodots., You can come back here anytime.`}
           acceptText={`Explore Remagine`}
           rejectText={`Take me back to the Classic`}
-          reject={() => this.setState({enabled: false})}
+          accept={() => this.setState({enabled: false})}
+          reject={() => this.setState({enabled: true})}
           enabled={this.state.enabled} />
       </div>
     )
