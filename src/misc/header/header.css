@@ -1,6 +1,22 @@
 .header {
     height: 60px;
     background-color: rgb(170, 170, 170);
+    animation-name: openHeaderMain;
+    animation-duration: 0.5s;
+    user-select: none;
+    -webkit-user-drag: none;
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+}
+
+@keyframes openHeaderMain {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
 }
 
 .logo {
