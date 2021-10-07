@@ -1,12 +1,14 @@
 import { Component } from 'react';
 import './App.css';
 import Header from './misc/header/header';
+import Footer from './misc/footer/footer';
 import { Prompt } from './interfaces/Modal';
 
 function App() {
   return (
     <div className="App">
       <Home />
+      <Footer/>
     </div>
   );
 }

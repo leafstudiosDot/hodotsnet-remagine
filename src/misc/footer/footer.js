@@ -1,6 +1,8 @@
+import './footer.css'
+
 function Footer() {
     return (
-        <div className="footer"><span id="leafstudiosDot">© leafstudiosDot 2022</span></div>
+        <div className="copyright-footer">© leafstudiosDot 2022</div>
     )
 }
 

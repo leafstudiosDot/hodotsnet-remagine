@@ -1,3 +1,9 @@
-.Footer {
-    
+.copyright-footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 15px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px 0px 0px 0px;
 }
