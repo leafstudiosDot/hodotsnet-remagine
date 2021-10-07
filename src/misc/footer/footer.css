@@ -13,6 +13,24 @@
     -webkit-user-drag: none;
 }
 
+.devMode-footer {
+  bottom: 14px;
+  position: fixed;
+  right: 0px;
+  padding: 10px;
+  background-color: #ff6c6c;
+  border-radius: 10px 0px 0px 0px;
+  font-size: 15px;
+  padding-right: 13px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  animation-name: openFooterCR;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0, 0.82, 0.25, 1);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 @keyframes openFooterCR {
     0% {
       transform: translateY(100%);

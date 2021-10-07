@@ -2,7 +2,14 @@ import './footer.css'
 
 function Footer() {
     return (
-        <div className="copyright-footer">© leafstudiosDot 2022</div>
+        <span>
+            {!process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? (
+                <div className="devMode-footer">
+                    Development Mode
+                </div>
+            ) : (null)}
+            <div className="copyright-footer">© leafstudiosDot 2022</div>
+        </span>
     )
 }
 
