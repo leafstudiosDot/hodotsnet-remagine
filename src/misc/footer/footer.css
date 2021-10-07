@@ -6,4 +6,17 @@
     background-color: #ffffff;
     padding: 5px;
     border-radius: 15px 0px 0px 0px;
+    animation-name: openFooterCR;
+    animation-duration: 0.5s;
+    user-select: none;
+    -webkit-user-drag: none;
 }
+
+@keyframes openFooterCR {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
