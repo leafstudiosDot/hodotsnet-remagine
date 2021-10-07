@@ -17,6 +17,7 @@
 
 #Modal-Title {
     font-size: 20px;
+    user-select: none;
 }
 
 #Modal-Description {
@@ -24,6 +25,7 @@
     height: 80px;
     overflow-y: overlay;
     word-break: break-word;
+    user-select: none;
 }
 
 #Modal-ButtonContainer {
@@ -38,6 +40,7 @@
     cursor: pointer;
     background-color: #e25151;
     border-radius: 10px;
+    user-select: none;
 }
 
 #Modal-ButtonAccept {
@@ -46,6 +49,7 @@
     background-color: #63ff46;
     border-radius: 10px;
     margin-left: 20px;
+    user-select: none;
 }
 
 .Modal-BG {
