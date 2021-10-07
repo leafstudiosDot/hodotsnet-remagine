@@ -8,6 +8,7 @@
     border-radius: 15px 0px 0px 0px;
     animation-name: openFooterCR;
     animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0, 0.82, 0.25, 1);
     user-select: none;
     -webkit-user-drag: none;
 }

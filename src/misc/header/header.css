@@ -3,6 +3,7 @@
     background-color: rgb(170, 170, 170);
     animation-name: openHeaderMain;
     animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0, 0.82, 0.25, 1);
     user-select: none;
     -webkit-user-drag: none;
     position: fixed;
