@@ -7,6 +7,9 @@ If you are a member of this organization, you can view the Modern (default inter
 <br />
 Some updates changes for hodots. front end interface web was managed and developed by leafstudiosDot.
 
+## Accessing hodots. Services API
+Work in progress...
+
 # React.js Instruction
 
 ## Available Scripts
