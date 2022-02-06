@@ -1,0 +1,34 @@
+#search_bar_container {
+    display: inline-flex;
+}
+
+#search_bar_main {
+    position: absolute;
+    margin-top: -48px;
+    margin-left: 22px;
+    height: 30px;
+    border-radius: 7px;
+    width: 300px;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: #858585;
+}
+
+#search_bar_main:focus {
+    outline: none;
+}
+
+#search_button_main {
+    position: absolute;
+    margin-top: -48px;
+    margin-left: 332px;
+    height: 36px;
+    padding: 5px;
+    border-style: solid;
+    border-color: #858585;
+    background-color: #dddddd;
+}
+
+#search_button_main:active {
+    background-color: #acacac;
+}
