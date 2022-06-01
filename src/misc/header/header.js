@@ -26,9 +26,9 @@ function HeaderSecondBar(props) {
         }
     }
 
-    function HeaderButton(text, onClick) {
+    function HeaderButton(text, index, onClick, addedindex) {
         return (
-            <div id="headerMenuButton" onClick={onClick}>
+            <div id="headerMenuButton" style={{marginLeft: (65 * index + addedindex) + "px"}} onClick={onClick}>
                 <span>{text}</span>
             </div>
         )
@@ -37,7 +37,9 @@ function HeaderSecondBar(props) {
     function HeaderTwo() {
         return (
             <div className="header2" style={{ zIndex: 501, overflow: "hidden", position: "absolute", top: isOpen ? "0px" : "-60px" }}>
-                {HeaderButton("Home")}
+                {HeaderButton("Home", 0)}
+                {HeaderButton("Settings", 1)}
+                {HeaderButton("About", 2, null, 17)}
             </div>
         )
     }
