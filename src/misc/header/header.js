@@ -37,8 +37,8 @@ function HeaderSecondBar(props) {
     function HeaderTwo() {
         return (
             <div className="header2" style={{ zIndex: 501, overflow: "hidden", position: "absolute", top: isOpen ? "0px" : "-60px" }}>
-                {HeaderButton("Home", 0)}
-                {HeaderButton("Settings", 1)}
+                {HeaderButton("Home", 0, null, 0)}
+                {HeaderButton("Settings", 1, null, 0)}
                 {HeaderButton("About", 2, null, 17)}
             </div>
         )
