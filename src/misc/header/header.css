@@ -9,6 +9,7 @@
     position: fixed;
     z-index: 500;
     width: 100%;
+    box-shadow: 0px 3px 15px #00000036;
 }
 
 @keyframes openHeaderMain {
@@ -23,8 +24,38 @@
 .logo {
     height: 40px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .logo:hover {
     background-color: rgb(110, 110, 110);
+}
+
+.header2 {
+    height: 60px;
+    user-select: none;
+    -webkit-user-drag: none;
+    position: fixed;
+    transition-timing-function: cubic-bezier(0, 0.54, 0.25, 1);
+    transition-duration: 0.2s;
+    background-color: rgb(170, 170, 170);
+    z-index: 501;
+    padding-left: 10px;
+    left: 0;
+    width: 100%;
+    margin-left: 60px;
+}
+
+#headerMenuButton {
+  position: absolute;
+  transform: translate(0%, 34%);
+  padding: 7px;
+  background-color: #939393;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#headerMenuButton:hover {
+  background-color: #808080;
 }

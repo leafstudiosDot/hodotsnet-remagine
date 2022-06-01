@@ -1,16 +1,51 @@
 import { ReactComponent as WebLogo } from '../../assets/hodots-logo/logo.svg';
 import './header.css'
 import './search.css'
+import { useState } from 'react';
 
 function Header(props) {
+    const headerSecondBar = new HeaderSecondBar();
     return (
         <div style={{ zIndex: 500 }}>
             <div className="header">
-                <WebLogo className="logo" />
+                <WebLogo className="logo" onClick={headerSecondBar.Toggle} />
                 <span>{Search()}</span>
+                {headerSecondBar.HeaderTwo()}
             </div>
         </div>
     )
+}
+
+function HeaderSecondBar(props) {
+    const [isOpen, setOpen] = useState(false);
+    function Toggle() {
+        if (isOpen) {
+            setOpen(false);
+        } else {
+            setOpen(true);
+        }
+    }
+
+    function HeaderButton(text, onClick) {
+        return (
+            <div id="headerMenuButton" onClick={onClick}>
+                <span>{text}</span>
+            </div>
+        )
+    }
+
+    function HeaderTwo() {
+        return (
+            <div className="header2" style={{ zIndex: 501, overflow: "hidden", position: "absolute", top: isOpen ? "0px" : "-60px" }}>
+                {HeaderButton("Home")}
+            </div>
+        )
+    }
+
+    return {
+        HeaderTwo: HeaderTwo,
+        Toggle: Toggle
+    }
 }
 
 function Search(props) {
