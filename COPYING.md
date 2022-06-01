@@ -1,3 +1,1 @@
-© 2021-2022 leafstudiosDot
-You can modify the code for contributing/collaborating purposes but you may not allow to distribute it claiming as yourself, 
-you may need to credit us.
+© 2021-2022 leafstudiosDot You can modify the code for contributing/collaborating purposes but you may not allow to distribute it claiming this repository as yourself. Thank you and happy contributing/collaborating for this project!
