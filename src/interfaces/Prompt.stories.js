@@ -1,11 +1,12 @@
-import {Prompt} from './Modal';
+import { Prompt } from './Modal';
+import { action } from '@storybook/addon-actions';
 
 export default {
     title: "Prompt",
     component: Prompt
 }
 
-const Template = (args) => <Prompt {...args}/>
+const Template = (args) => <Prompt accept={action("Accepted")} reject={action("Rejected")} {...args} />
 
 export const Primary = Template.bind({});
 Primary.args = {
