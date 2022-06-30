@@ -18,6 +18,8 @@
 #Modal-Title {
     font-size: 20px;
     user-select: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #Modal-Description {

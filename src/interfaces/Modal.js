@@ -21,10 +21,11 @@ function Prompt(props) {
         }}>
             <div id="Modal-Container" className="Modal-Prompt"
                 style={{
-                    height: props.height + 'px'
+                    height: props.height + 'px',
+                    minHeight: 60 + 'px'
                 }}>
                 <div id="Modal-Title">{props.title}</div>
-                <div id="Modal-Description">{props.desc}</div>
+                <div id="Modal-Description" style={{height: props.height - 60 + 'px'}}>{props.desc}</div>
 
                 <div id="Modal-ButtonContainer">
                     {props.rejectText === "" || props.rejectText === null ? (null) : (<div id="Modal-ButtonReject" onClick={() => props.reject()}>{props.rejectText}</div>)}
