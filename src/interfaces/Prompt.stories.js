@@ -2,7 +2,7 @@ import { Prompt, SmallPrompt } from './Modal';
 import { action } from '@storybook/addon-actions';
 
 export default {
-    title: "Prompt",
+    title: "Remagine/Windows/Prompt",
     component: Prompt,
     parameters: {
         docs: {
